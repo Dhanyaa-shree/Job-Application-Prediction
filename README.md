@@ -145,23 +145,37 @@ The project uses supervised machine learning classification models.
 Three supervised machine learning classification models were trained and evaluated to predict whether a candidate would accept or reject a job offer.
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|-------|---------:|----------:|--------:|---------:|--------:|
-| Logistic Regression | **85.12%** | 71.42% | **85.17%** | 77.69% | 85.13% |
-| Decision Tree | 83.02% | 71.24% | 74.09% | 72.64% | 80.51% |
-| **Random Forest** ⭐ | **88.57%** | **82.02%** | 79.95% | **80.97%** | **86.14%** |
+|-------|----------:|----------:|--------:|---------:|---------:|
+| Logistic Regression | **85.69%** | 72.12% | **85.93%** | 78.42% | 85.76% |
+| Decision Tree | 83.74% | 71.81% | 76.21% | 73.95% | 81.61% |
+| Random Forest ⭐ | **89.39%** | **82.80%** | 81.98% | **82.38%** | **87.29%** |
 
-### 🏆 Best Performing Model
+### 📈 Model Accuracy Comparison
 
-**Random Forest Classifier** achieved the highest overall performance.
+| Model | Training Accuracy | Testing Accuracy |
+|-------|------------------:|-----------------:|
+| Logistic Regression | 87.55% | 85.69% |
+| Decision Tree | 100.00% | 83.74% |
+| Random Forest | 100.00% | **89.39%** |
 
-- ✅ Accuracy: **88.57%**
-- ✅ Precision: **82.02%**
-- ✅ Recall: **79.95%**
-- ✅ F1-Score: **80.97%**
-- ✅ ROC-AUC: **86.14%**
+> **Observation:**  
+> - Logistic Regression shows good generalization with similar training and testing accuracy.
+> - Decision Tree achieved **100% training accuracy**, indicating **overfitting**, as its testing accuracy dropped to **83.74%**.
+> - Random Forest also achieved **100% training accuracy**, but significantly improved generalization with the highest testing accuracy of **89.39%**.
 
-The Random Forest model was selected as the final model because it provided the best balance between prediction accuracy, precision, recall, and overall classification performance.
+---
 
+## 🏆 Best Performing Model
+
+**Random Forest Classifier** achieved the best overall performance across all evaluation metrics.
+
+- ✅ **Accuracy:** 89.39%
+- ✅ **Precision:** 82.80%
+- ✅ **Recall:** 81.98%
+- ✅ **F1-Score:** 82.38%
+- ✅ **ROC-AUC:** 87.29%
+
+The **Random Forest** model was selected as the final model because it achieved the highest testing accuracy while maintaining the best balance between precision, recall, F1-score, and ROC-AUC, making it the most reliable model for job offer acceptance prediction.
 ---
 
 ## 📈 Key Insights
