@@ -176,7 +176,6 @@ Three supervised machine learning classification models were trained and evaluat
 - ✅ **ROC-AUC:** 87.29%
 
 The **Random Forest** model was selected as the final model because it achieved the highest testing accuracy while maintaining the best balance between precision, recall, F1-score, and ROC-AUC, making it the most reliable model for job offer acceptance prediction.
----
 
 ## 📈 Key Insights
 
